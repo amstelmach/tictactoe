@@ -63,6 +63,7 @@ const TicTacToe = () => {
   const handleRestart = () => {
     setWinner(null);
     setCells(Array(9).fill(''));
+    setTurn('X');
   };
 
   const Cell = ({ num }) => {
