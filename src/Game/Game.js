@@ -22,7 +22,7 @@ const TicTacToe = () => {
   const Cell = ({ num }) => {
     return (
       <div onClick={() => handleClick(num)} className='cell'>
-        -
+        {cells[num]}
       </div>
     );
   };
