@@ -38,6 +38,7 @@ const TicTacToe = () => {
       setTurn('X');
     }
 
+    winnerCheck(squares);
     setCells(squares);
   };
 
