@@ -15,6 +15,7 @@ const TicTacToe = () => {
       setTurn('X');
     }
 
+    setCells(squares);
     console.log(squares);
   };
 
