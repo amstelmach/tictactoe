@@ -78,7 +78,7 @@ const TicTacToe = () => {
     <div>
       <h1>Tic Tac Toe</h1>
       <h3>Turn: {turn}</h3>
-      <div className='boardgame'>
+      <div className='gameBoard'>
         <Cell num={0} />
         <Cell num={1} />
         <Cell num={2} />
@@ -89,12 +89,14 @@ const TicTacToe = () => {
         <Cell num={7} />
         <Cell num={8} />
       </div>
-      {winner && (
-        <>
-          {winner} is the winner!
-          <button onClick={() => handleRestart()}>play again</button>
-        </>
-      )}
+      <div className='infoContainer'>
+        {winner && (
+          <>
+            {winner} is the winner!
+            <button onClick={() => handleRestart()}>play again</button>
+          </>
+        )}
+      </div>
     </div>
   );
 };
