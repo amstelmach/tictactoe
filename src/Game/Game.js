@@ -83,6 +83,7 @@ const TicTacToe = () => {
         <Cell num={7} />
         <Cell num={8} />
       </div>
+      {winner && <>{winner} is the winner!</>}
     </div>
   );
 };
