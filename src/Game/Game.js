@@ -3,12 +3,19 @@ import './Game.css';
 
 const TicTacToe = () => {
   const [turn, setTurn] = useState('X');
+  const [cells, setCells] = useState(Array(9).fill(''));
+
   const handleClick = (num) => {
+    let squares = [...cells];
     if (turn === 'X') {
+      squares[num] = 'X';
       setTurn('O');
     } else {
+      squares[num] = 'O';
       setTurn('X');
     }
+
+    console.log(squares);
   };
 
   const Cell = ({ num }) => {
