@@ -4,7 +4,11 @@ import './Game.css';
 const TicTacToe = () => {
   const [turn, setTurn] = useState('X');
   const handleClick = (num) => {
-    alert(num);
+    if (turn === 'X') {
+      setTurn('O');
+    } else {
+      setTurn('X');
+    }
   };
 
   const Cell = ({ num }) => {
