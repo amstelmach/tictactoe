@@ -4,6 +4,7 @@ import './Game.css';
 const TicTacToe = () => {
   const [turn, setTurn] = useState('X');
   const [cells, setCells] = useState(Array(9).fill(''));
+  const [winner, setWinner] = useState(null);
 
   const winnerCheck = (squares) => {
     let possibleWins = {
@@ -23,6 +24,23 @@ const TicTacToe = () => {
       ],
     };
 
+    for (let possibleWin in possibleWins) {
+      possibleWins[possibleWin].forEach((pattern) => {
+        if (
+          squares[pattern[0]] === '' ||
+          squares[pattern[1]] === '' ||
+          squares[pattern[2]] === ''
+        ) {
+          // do nothing - can not have a winner
+        } else if (
+          squares[pattern[0]] === squares[pattern[1]] &&
+          squares[pattern[1]] === squares[pattern[2]]
+        ) {
+          setWinner(squares[pattern[0]]);
+        }
+      });
+    }
+  };
 
   const handleClick = (num) => {
     if (cells[num] !== '') {
