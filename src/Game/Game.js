@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Game.css';
 
 const TicTacToe = () => {
+  const [turn, setTurn] = useState('X');
   const handleClick = (num) => {
     alert(num);
   };
@@ -17,7 +18,7 @@ const TicTacToe = () => {
   return (
     <div>
       <h1>Tic Tac Toe</h1>
-
+      <h3>Turn: {turn}</h3>
       <div className='boardgame'>
         <Cell num={0} />
         <Cell num={1} />
