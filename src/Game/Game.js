@@ -6,6 +6,10 @@ const TicTacToe = () => {
   const [cells, setCells] = useState(Array(9).fill(''));
 
   const handleClick = (num) => {
+    if (cells[num] !== '') {
+      return;
+    }
+
     let squares = [...cells];
     if (turn === 'X') {
       squares[num] = 'X';
