@@ -96,6 +96,12 @@ const TicTacToe = () => {
             <button onClick={() => handleRestart()}>play again</button>
           </>
         )}
+        {!winner && cells.every((element) => element !== '') && (
+          <>
+            It is a draw!
+            <button onClick={() => handleRestart()}>play again</button>
+          </>
+        )}
       </div>
     </div>
   );
