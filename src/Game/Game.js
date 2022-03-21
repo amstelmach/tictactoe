@@ -43,7 +43,7 @@ const TicTacToe = () => {
   };
 
   const handleClick = (num) => {
-    if (cells[num] !== '') {
+    if (cells[num] !== '' || winner) {
       return;
     }
 
