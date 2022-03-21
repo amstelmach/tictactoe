@@ -1,6 +1,6 @@
 TicTacToe game
 
-![TicTacToe] (/tictactoe.png)
+![TicTacToe] (tictactoe.png)
 
 In order to run the application, please run:
 
