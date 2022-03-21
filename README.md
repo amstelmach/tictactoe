@@ -1,6 +1,6 @@
 TicTacToe game
 
-![TicTacToe] (src/tictactoe.png "tic tac toe")
+<img src="readmeImage/tictactoe.png" width="300" >
 
 In order to run the application, please run:
 
