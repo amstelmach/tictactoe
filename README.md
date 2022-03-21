@@ -1,5 +1,7 @@
 TicTacToe game
 
+![TicTacToe] (tictactoe.png "TicTacToe board")
+
 In order to run the application, please run:
 
 `npm start`
