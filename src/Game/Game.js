@@ -76,7 +76,7 @@ const TicTacToe = () => {
 
   return (
     <div>
-      <h1>Tic Tac Toe</h1>
+      <h1>TIC TAC TOE</h1>
       <h3>Turn: {turn}</h3>
       <div className='gameBoard'>
         <Cell num={0} />
