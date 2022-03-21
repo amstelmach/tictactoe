@@ -1,6 +1,6 @@
 TicTacToe game
 
-<img src="readmeImage/tictactoe.png" width="300" >
+[![tictactoe.png](https://i.postimg.cc/jjt7DqkB/tictactoe.png)](https://postimg.cc/pmcT7vvB)
 
 In order to run the application, please run:
 
