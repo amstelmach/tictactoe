@@ -5,29 +5,49 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #36454f;
-  color: black;
+  background: rgb(88, 90, 86);
+  background: linear-gradient(
+    327deg,
+    rgba(88, 90, 86, 0.9531162806919643) 0%,
+    rgba(88, 90, 86, 0.7878501742493873) 23%,
+    rgba(88, 90, 86, 0.5777661406359419) 42%,
+    rgba(88, 90, 86, 0.7514356084230567) 65%,
+    rgba(88, 90, 86, 0.33126754119616597) 100%
+  );
+  color: #272424;
   font-family: 'Lato', sans-serif;
 }
 
 .gameBoard {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 306px;
+  width: 320px;
   gap: 5px;
-  color: #353935;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  background: inherit;
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
 }
 
 .cell {
   width: 100px;
   height: 100px;
-  border-radius: 5px;
-  background-color: #e5e4e2;
   line-height: 100px;
   font-size: 60px;
   display: flex;
   justify-content: center;
+  background: rgba(158, 215, 142, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease-out;
+}
+
+.cell:hover {
+  background: rgba(158, 215, 142, 0.4);
 }
 
 .infoContainer {
@@ -35,6 +55,7 @@ body {
   justify-content: space-around;
   font-size: 20px;
   font-weight: 600;
+  margin-top: 2rem;
 }
 
 button {
